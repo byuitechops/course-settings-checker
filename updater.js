@@ -28,7 +28,8 @@ async function updateCourse(courseToUpdate) {
 }
 
 async function main() {
-    let csvObjects = readCSV('reports/course_settings_report_1555714400855.csv');
+    let filepath = process.argv[2];
+    let csvObjects = readCSV(filepath);
     let coursesToUpdate = csvObjects.filter(csvObject => {
         return csvObject.participate_button === 'false' || csvObject.restrict_viewing_button === 'false';
     });

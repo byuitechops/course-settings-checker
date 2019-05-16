@@ -4,6 +4,8 @@
   "description": "A tool that will check all courses' settings in a given term and generate a report of the results",
   "main": "main.js",
   "scripts": {
+    "start": "node main.js",
+    "update": "node updater.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
